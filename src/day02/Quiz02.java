@@ -7,7 +7,7 @@ public class Quiz02 {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-		int iNum, num1, num2;
+		int iNum;
 		
 		System.out.print("수 입력 : ");
 		iNum = sc.nextInt();
@@ -15,9 +15,10 @@ public class Quiz02 {
 		String rNum = (iNum % 2 == 0) ? "짝수" : "홀수";
 		System.out.println(iNum + " = " + rNum);
 		
-		String sRes = (iNum % 3 == 0) ? "3의 배수" : "3의 배수가 아니다.";
-		System.out.println(iNum + " = " + sRes);
+		rNum = (iNum % 3 == 0) ? "3의 배수" : "3의 배수가 아니다.";
+		System.out.println(iNum + " = " + rNum);
 		
+		int num1, num2;
 		System.out.print("두 수 입력 : ");
 		num1 = sc.nextInt();
 		num2 = sc.nextInt();
