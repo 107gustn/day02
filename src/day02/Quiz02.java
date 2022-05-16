@@ -12,10 +12,10 @@ public class Quiz02 {
 		System.out.print("수 입력 : ");
 		iNum = sc.nextInt();
 		
-		String rNum = (iNum / 2 == 0) ? "홀수" : "짝수";
+		String rNum = (iNum % 2 == 0) ? "짝수" : "홀수";
 		System.out.println(iNum + " = " + rNum);
 		
-		String sRes = (iNum / 3 == 0) ? "3의 배수" : "3의 배수가 아니다.";
+		String sRes = (iNum % 3 == 0) ? "3의 배수" : "3의 배수가 아니다.";
 		System.out.println(iNum + " = " + sRes);
 		
 		System.out.print("두 수 입력 : ");
